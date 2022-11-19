@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tarefas concluidas </title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/1f43f2345d.js" crossorigin="anonymous"></script>
+  <script>
+    const token = localStorage.getItem("token")
+if(token != 'logado'){
+
+  alert("Você precisa ter acesso")
+  window.location.href = "login.html"
+} 
+  </script>
+
+</head>
+
+<body>
+  <header id="cabecalho">
+    <nav id="menu" >
+        <ul type="disc">
+          <div>
+            <img class="image" 
+        src="Logotipo.png"
+        alt="Logo do projeto. My Tasks escrito em branco e um relogio roxo."></div>
+            <li class="nav-item">
+                <a class="nav-link active" href="tarefas.html">&nbspVoltar&nbsp</a>
+            </li>          
+         
+ </ul> </nav> 
+</header>
+  <div class="container">
+    <div class="header">
+      <span>&nbsp&nbsp&nbspLista de tarefas concluídas</span>
+      
+    </div>
+
+    <div id="tableItensC" class="divTable">
+      <table>
+        <thead>
+          <tr>
+            <th>Título</th>
+            <th>Descrição</th>
+
+            
+          </tr>
+        </thead>
+        <tbody id="tarefasConcluidas">
+        </tbody>
+      </table>
+    </div>
+
+
+
+    
+    
+  </div>
+  <script src="js/tarefas.js"></script>
+  <script src = "js/login.js"> </script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt - br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>HOME - my tasks</title>
+    <script>
+      const token = localStorage.getItem("token")
+if(token !== 'logado'){
+
+  alert("Você precisa ter acesso")
+  window.location.href = "login.html"
+} 
+    </script>
+</head>
+<body id="home">
+    <header id="cabecalho">
+        <nav id="menu" >
+            <ul type="disc">
+              <div>
+                <img class="image" 
+            src="Logotipo.png"
+            alt="Logo do projeto. My Tasks escrito em branco e um relogio roxo."></div>
+              <li class="nav-item">
+                <a class="nav-link active" href="homeU.html">&nbspHome&nbsp </a>
+             </li>
+             <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="tarefas.html">&nbspTarefas&nbsp</a>
+             </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="timer/timer.html">&nbspTimer&nbsp</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="home.html" onclick = "sair()">&nbspSair&nbsp </a>
+              </li>
+            </ul>
+      </nav> 
+    </header>
+
+  <div id="txt">
+
+    <div id="textosHome">
+
+      <article>
+      <h1>O que é o Pomodoro? </h1><br>
+       O método Pomodoro é simples e dura duas horas. <br>
+       Primeiro, você realiza uma atividade durante 25 minutos(por exemplo)... <br>
+       Quando acabar o tempo, descansar 5 minutos. Assim sucessivamente  <br>
+       até que complete as duas horas. Como recompensa, você descansa mais 30 minutos.
+
+
+      </article><span><br></span>
+
+
+      <article>
+        <h1>Descanso: </h1> <br>
+        Durante o tempo de descanso, é interessante não fazer nada que requeira <br>
+        muito esforço mental. Caso contrário, sua mente não será capaz de reorganizar <br>
+        e integrar o que você aprendeu. Como resultado, você não será capaz de dar ao <br>
+        próximo Pomodoro o seu melhor esforço. Nesse intervalo, você pode comer, beber um <br>
+        copo d’água, ver televisão, fazer um alongamento, acessar as redes sociais ou apenas <br>
+        relaxar da forma que achar melhor.
+
+      
+
+      </article>
+
+
+    </div>
+    <div id="textosHome2">
+
+      <article>
+        <h1>  Vantagens de Usar a Técnica Pomodoro:</h1> <br>
+
+       - Alivia a ansiedade; <br>
+       - Aumenta o foco e a concentração por meio da redução das interrupções;<br>
+       - Aumenta a conscientização das decisões;<br>
+       - Aumenta a motivação e mantém-na constante;<br>
+       - Reforça a determinação para atingir os objetivos;<br>
+       - Melhora o processo de trabalho ou estudo;<br>
+       - Reforça sua determinação de continuar a aplicar-se em face de complexas situações. <br>
+        
+      </article><span><br></span>
+
+      <article>
+        <h1>  Futuros objetivos para a pagina</h1> <br>
+
+         - A página Home do usuário que realizou login será atualizada <br>
+         para conter dados de uso, como tempo utilizado em tarefas e <br>
+         gráficos diários e semanais!
+
+      </article>
+
+    </div>
+  </div>
+<script src = "js/login.js"> </script>
+</body>
+</html>
